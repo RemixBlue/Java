@@ -15,3 +15,5 @@
 2、输入 git commit -m '新添加的文件内容描述'
 3、输入 git push origin master 即可
 
+
+ps:仅供本人学习使用
