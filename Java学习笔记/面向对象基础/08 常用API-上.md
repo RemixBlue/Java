@@ -1,4 +1,4 @@
-# 常用API 
+# 常用API-上
 ## 1、 API
 ### 概述：
 API(Application Programming Interface)，应用程序编程接口。Java API是一本程序员的 字典 ，是JDK中提供给我们使用的类的说明文档。
@@ -77,7 +77,7 @@ int num =  nextInt(int a) 生成范围是0~a（不包含a） a只能为正整数
 `java.util.ArrayList` 是大小可变的数组的实现，存储在内的数据称为元素。此类提供一些方法来操作内部存储的元素。 ArrayList 中可不断添加元素，其大小也自动增长。
 * ### 使用
 #### 查看类
-* `java.util.ArrayList <E> `：该类需要 import导入使后使用。 \
+* `java.util.ArrayList <E> `：该类需要 `import`导入使后使用。 \
 `<E>` ，表示一种指定的数据类型，叫做泛型。 `E` ，取自Element（元素）的首字母。在出现 E 的地方，使用一种引用数据类型将其替换即可，表示将存储哪种引用类型的元素。
 >代码如下： 
 
