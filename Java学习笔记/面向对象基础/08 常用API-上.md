@@ -12,7 +12,7 @@ API(Application Programming Interface)，应用程序编程接口。Java API是�
 7. 使用成员方法。
 ---
 ## 2、 Scanner类
-java.util.Scanner 是 Java5 的新特征，我们可以通过 Scanner 类来获取用户的输入。 
+`java.util.Scanner ` 是 Java5 的新特征，我们可以通过 Scanner 类来获取用户的输入。 \
 Scanner类 : 一个可以解析基本类型和字符串的简单文本扫描器。
 
 ### 2. 1 使用 Scaanner 类
@@ -75,35 +75,36 @@ int num =  nextInt(int a) 生成范围是0~a（不包含a） a只能为正整数
 存储对象数据，选择的容器，只有对象数组。而数组的长度是固定的，无法适应数据变化的需求。为了解决这个问题，Java提供了另一个容器 `java.util.ArrayList `集合类,让我们可以更便捷的存储和操作对象数据。
 ### 4. 1 定义 
 `java.util.ArrayList` 是大小可变的数组的实现，存储在内的数据称为元素。此类提供一些方法来操作内部存储的元素。 ArrayList 中可不断添加元素，其大小也自动增长。
-* 使用
+### * 使用
 ### 查看类
 * `java.util.ArrayList <E> `：该类需要 import导入使后使用。 \
 `<E>` ，表示一种指定的数据类型，叫做泛型。 `E` ，取自Element（元素）的首字母。在出现 E 的地方，使用一种引用数据类型将其替换即可，表示将存储哪种引用类型的元素。
 >代码如下： 
 
 `ArrayList<String>，ArrayList<Student>`
-### 查看构造方法 
+#### 查看构造方法 
 * `public ArrayList()` ：构造一个内容为空的集合。 
 > 基本格式: 
 
 `ArrayList<String> list = new ArrayList<String>(); `
 
 在JDK 7后,右侧泛型的尖括号之内可以留空，但是<>仍然要写。
-> 简化格式： 
+> 简化格式：
+
 `ArrayList<String> list = new ArrayList<>(); `
 
-### 查看成员方法 
+#### 查看成员方法 
 * `public boolean add(E e) ` ： 将指定的元素添加到此集合的尾部。 \
 参数 `E e` ，在构造ArrayList对象时， `<E>` 指定了什么数据类型，那么 `add(E e) `方法中，只能添加什么数据类型的对象。
 
-### 4. 2 常用方法和遍历
+#### 4. 2 常用方法和遍历
 对于元素的操作,基本体现在——增、删、查。常用的方法有： 
 * `public boolean add(E e) `：将指定的元素添加到此集合的尾部。 
 * `public E remove(int index) `：移除此集合中指定位置上的元素。返回被删除的元素。 
 * `public E get(int index)` ：返回此集合中指定位置上的元素。返回获取的元素。 
 * `public int size()` ：返回此集合中的元素数。遍历集合时，可以控制索引范围，防止越界。
 * `public void add(int index, E element) `:将指定的元素插入此列表中的指定位置。
-### 4. 3 存储基本数据类型
+#### 4. 3 存储基本数据类型
 ArrayList对象不能存储基本类型，只能存储引用类型的数据。类似 <int> 不能写，但是存储基本数据类型对应的包装类型是可以的。所以，想要存储基本类型数据， <> 中的数据类型，必须转换后才能编写。
 > 转换写法如下：
 
@@ -118,3 +119,5 @@ ArrayList对象不能存储基本类型，只能存储引用类型的数据。�
 |char|Character(特殊)|
 |boolean|Boolean|
 
+
+> ps : 仅供本人学习使用
