@@ -97,12 +97,12 @@ SELECT * FROM emp JOIN dept ON emp.`dept_id` = dept.`id`;
 SELECT 	t1.*,t2.`name` FROM emp t1 LEFT JOIN dept t2 ON t1.`dept_id` = t2.`id`;
 ```
 ### **3. 2 右外连接：**
-    * 语法：select 字段列表 from 表1 right [outer] join 表2 on 条件；
-    * 查询的是右表所有数据以及其交集部分。
-    * 例子：
-    ```sql
-    SELECT 	* FROM dept t2 RIGHT JOIN emp t1 ON t1.`dept_id` = t2.`id`;
-    ```
+* 语法：select 字段列表 from 表1 right [outer] join 表2 on 条件；
+* 查询的是右表所有数据以及其交集部分。
+* 例子：
+```sql
+SELECT 	* FROM dept t2 RIGHT JOIN emp t1 ON t1.`dept_id` = t2.`id`;
+```
 ## **第四章 子查询**
 概念：查询中嵌套查询，称嵌套查询为子查询。
 ```sql
