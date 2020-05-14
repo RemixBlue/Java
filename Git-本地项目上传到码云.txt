@@ -12,8 +12,9 @@
 更新：
 1、进入本地项目的文件夹，点击鼠标右键，选择git bash here
 然后在窗口输入 git add .
-2、输入 git commit -m '新添加的文件内容描述'
-3、输入 git push origin master 即可
+2、输入 git pull origin master 命令，将码云上的仓库pull到本地文件夹
+3、输入 git commit -m '新添加的文件内容描述'
+4、输入 git push origin master 即可
 
 
 ps:仅供本人学习使用
